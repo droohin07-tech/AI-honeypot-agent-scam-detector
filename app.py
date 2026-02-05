@@ -38,4 +38,8 @@ Return ONLY JSON:
         return jsonify({"error": str(e)})
 
 if __name__ == "__main__":
+
     app.run()
+    @app.route("/")
+def home():
+    return "AI Honeypot API is running"
